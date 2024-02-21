@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    flex-direction: column;
+    /* z-index: -1; */
+    /* position: absolute; */
+}
+
+.content-container h1 {
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.content-container p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.content-container .cta-btn {
+    color: #fff;
+    background-color: darkred;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-container {
+    position: relative;
+    position: fixed;
+    display: none;
+}
+
+.modal-container .modal {
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    /* padding: 50px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.modal-container .modal .modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 20px 0;
+}
+
+.modal-form label {
+    /* display: block; */
+    margin-bottom: 6px;
+}
+
+.modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.modal .close-btn {
+    font-size: 25px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-left: 365px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: darkred;
+}
+
+.submit-btn {
+    margin: 10px auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    background: darkred;
+    border-radius: 12px;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+
+.modal-container.show-modal {
+    display: block;
+}

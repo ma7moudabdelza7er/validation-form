@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="content-container">
+            <h1 class="text1" >Welcome to the real world</h1>
+            <p class="text2" >
+                There are a few different ways to store fingerprint data in a database 
+                for use in a mobile application. One common approach <br> is to use a hashing algorithm, 
+                such as SHA-256, to create a unique hash of the fingerprint  data. 
+                This hash can <br> then be stored in the database along with any other user-related information. 
+            </p>
+            <button class="cta-btn">Sign Up</button>
+        </div>
+    </div>
+    <section class="modal-container" id="modal">
+        <section class="modal">
+            <button class="close-btn" id="close">X</button>
+            <div class="modal-content">
+                <h1>Sign Up</h1>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="Email" placeholder="Enter Email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Enter password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="Confirm password">
+                            confirm password</label>
+                        <input type="text" id="confirm password" placeholder="Enter confirm password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </section>
+    </section>
+    <script>
+       let mainBtn = document.querySelector(".cta-btn");
+       let contain = document.querySelector(".modal-container");
+       let close1 = document.querySelector(".close-btn");
+       let text1 =document.querySelector(".text1");
+       let text2 =document.querySelector(".text2");
+       let modal = document.getElementById("modal");
+       mainBtn.addEventListener('click',function(){
+        contain.style.display="block";
+        text1.style.display="none";
+        text2.style.display="none";
+        // document.body.style.boxShadow="0 3px 10px rgb(0 0 0 / 0.2)";
+
+       })
+       close1.addEventListener('click',function(){
+        contain.style.display="none";
+        // contain.classList.remove('show-modal');
+        text1.style.display="block";
+        text2.style.display="block";
+       })
+    //    window.addEventListener('click',function(e){
+    //     e.target === contain ? contain.classList.remove('show-modal') : false ; 
+    //    })
+    </script>
+
+</body>
+</html>
